@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+    
+:root{
+--color-White:hsl(0, 0%, 100%);
+--color-lightGrey: hsl(217, 12%, 63%);
+--color-mediumGray:hsl(216, 12%, 54%);
+--color-darkBlue:hsl(213, 19%, 18%);
+--color-VeryDarkBlue:hsl(216, 12%, 8%);
+--color-orange:hsl(25, 97%, 53%);
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html{
+height: 100%;
+}
+
+body{
+width: 100%;
+height: 100%;
+background-color: var(--color-VeryDarkBlue);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+#rating-before, #rating-after{
+background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
+padding: 2rem;
+border: transparent;
+border-radius: 23px;
+width: 90vw;
+margin-bottom: 2rem;
+}
+
+#rating-after{
+display: none;
+} 
+
+.icon-border{
+background-color: #262e38;
+border: transparent;
+border-radius: 50%;
+height: 42px;
+width: 42px;
+padding: 0.8rem
+}
+
+h1{
+margin-top: 1.5rem;
+color: var(--color-White);
+font-family: 'Overpass', sans-serif;
+font-weight: 100;
+font-size: 1.5rem;
+}
+
+p{
+margin-top: 0.8rem;
+color: var(--color-lightGrey);
+font-family: 'Overpass', sans-serif;
+font-size: 1rem;
+line-height: 24px;
+}
+
+#ratings{
+margin: 2rem 0 0;
+display: flex;
+justify-content:space-between;
+} 
+
+input[type=radio] {
+appearance: none;
+}
+
+#ratings label{
+display: inline-flex;
+justify-content: center;
+align-items:center ;
+color: var(--color-mediumGray);
+background-color: #262E38;
+width: 40px;
+height: 40px;
+border: transparent;
+border-radius: 50%;
+cursor: pointer;
+}
+
+#ratings input[type=radio]:checked + label,
+#ratings label:hover{
+ background-color: var(--color-orange);
+ color:var(--color-White);
+}
+
+#button{
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-White);
+  background-color:var(--color-orange);
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#button:active{
+  background-color: var(--color-White);
+  color: var(--color-orange);
+}
+
+#rating-after .thnksimg{
+  text-align: center;
+}
+.thnksimg p{
+  text-align: center;
+}
+
+.rating-text{
+  color: var(--color-orange);
+  background-color: #262e38;
+  border: transparent;
+  border-radius: 20px;
+  width: 190px;
+  padding: 0.5rem;
+}
+
+.thnks-desc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (min-width:30em){
+#rating-before, #rating-after{
+width: 400px;
+min-height: 400px;
+}
+
+h1{
+font-size: 2rem;
+}
+
+input[type=radio] + label{
+width: 50px;
+height: 50px;
+}
+}
+
+.attribution { font-size: 11px; text-align: center; color: var(--color-White); }
+.attribution a { color:WHITE; }

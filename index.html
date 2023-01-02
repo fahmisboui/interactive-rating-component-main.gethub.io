@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<main>
+    <!-- Rating state start -->
+
+<div id="rating-before">
+  <div class="icon">
+    <img class="icon-border" src="images/icon-star.svg" alt="icon">
+  </div>
+  <h1>How did we do?</h1>
+
+  <p>
+    Please let us know how we did with your
+    support request. All feedback is appreciated
+    to help us improve our offering!
+  </p>
+
+    <form>
+        <div id="ratings">
+          <input type="radio" name="rate" id="1" value="1">
+          <label for="1">1</label>
+          <input type="radio" name="rate" id="2" value="2">
+          <label for="2">2</label>
+          <input type="radio" name="rate" id="3" value="3">
+          <label for="3">3</label>
+          <input type="radio" name="rate" id="4" value="4">
+          <label for="4">4</label>
+          <input type="radio" name="rate" id="5" value="5">
+          <label for="5">5</label>
+        </div>
+        <div>
+          <button type="button" id="button" onclick="checkValue()">Submit</button>
+        </div>
+    </form>
+</div>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+  
+<div id="rating-after">
+  <div aria-hidden=“true” class="thnksimg">
+    <img src="images/illustration-thank-you.svg" alt="">
+  </div>
+  <div class="thnks-desc">
+    <p class="rating-text">You selected <span id="rateGiven">0</span> out of 5</p>
+  
+    <h1>Thank you!</h1>
+  
+    <p class="text">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+  </div>
+
+</div>
+  
+    <!-- Thank you state end -->
+</div>
+</main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/fahmisboui/">Fahmi Sboui</a>.
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+</html>
